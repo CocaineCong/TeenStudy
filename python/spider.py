@@ -117,10 +117,10 @@ def GetSchoolInfo(headers):  # 学校信息
         URL = "http://m.fjcyl.com/admin/user/orgList"
         info_rsp = session.post(url=URL, headers=headers)
         info_json = info_rsp.json()
-        abbreviation = info_json["rs"][0]["cylorganization"]["abbreviation"]  # 19大数据
-        orgId = info_json["rs"][0]["cylorganization"]["orgId"]  # 个人id
-        address = info_json["rs"][0]["cylorganization"]["address"]  # 福州大学
-        orgName = info_json["rs"][0]["cylorganization"]["orgName"]  # 福州大学数学与计算机科学学院2019级大数据团支部
+        abbreviation = info_json["rs"][0]["cylorganization"]["abbreviation"]  
+        orgId = info_json["rs"][0]["cylorganization"]["orgId"]  
+        address = info_json["rs"][0]["cylorganization"]["address"] 
+        orgName = info_json["rs"][0]["cylorganization"]["orgName"]  
         BASE_INFO["abbreviation"] = abbreviation
         BASE_INFO["orgId"] = orgId
         BASE_INFO["address"] = address
@@ -220,7 +220,6 @@ def Send_Email():
         server.quit()
         print('success')
     except Exception as e:
-        # Todo 记得做完要发送到2681272923@qq.com这个邮箱
         if e == None:
             # Send_Boss()
             print('Faild:%s' % e)
