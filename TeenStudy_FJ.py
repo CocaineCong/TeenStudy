@@ -20,8 +20,8 @@ BASE_INFO = {
 }
 
 Email = [
-    # ['张三', '11111@qq.com'], ['李四', '22222@qq.com'],
-    # ['老王', '333333@qq.com'], ['小王', '444444@qq.com'],       # TODO 这里记得要改
+    # [ '11111@qq.com','张三'], [ '22222@qq.com','李四'],
+    # ['333333@qq.com','老王' ], [ '444444@qq.com','小王'],       # TODO 这里记得要改
 ]
 
 session = requests.Session()
