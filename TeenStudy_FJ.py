@@ -66,7 +66,8 @@ def GetCookie():
     dictCookies = driver.get_cookies()  # 获取cookie
     sleep(2)
     driver.close()
-    COOKIES = dictCookies[1]["name"] + "=" + dictCookies[1]["value"]+  ";" + dictCookies[0]["name"] + "=" + dictCookies[0]["value"] + ";" +dictCookies[2]["name"] + "=" +dictCookies[2]["value"]
+    # COOKIES = dictCookies[1]["name"] + "=" + dictCookies[1]["value"] + ";" + dictCookies[0]["name"] + "=" + dictCookies[0]["value"] + ";" +dictCookies[2]["name"] + "=" +dictCookies[2]["value"]
+    COOKIES = dictCookies[0]["value"]
     # print(COOKIES)
     return COOKIES
 
