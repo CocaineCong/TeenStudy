@@ -48,7 +48,7 @@ def Send_Email():
 
 
 def GetNotFinishList():  # 获取名单
-    ClassAllListEmail = []
+    ClassAllListEmail = [['张三', '1111@qq.com'], ['王五', '2222@qq.com'], ['老六', '311131@qq.com']]
     ClassHaveDone = []
     ClassNotDoneName = []
     ClassNotDoneEmail = []
